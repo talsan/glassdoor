@@ -40,6 +40,7 @@ Input:
 * `./extracts/overview_extra/<glassdor_link.html>` (additional info)
 Outputs: 
 * `./extracted_glassdoor.csv`
+* 
 Note: Uses `multiprocessing` to loop through all the raw html files
 
 #### 6. Build Final Output `build_final_output.py`

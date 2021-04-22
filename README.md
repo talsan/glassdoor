@@ -1,4 +1,4 @@
-# Scrape Glassdoor.com
+# Scrape Ratings from Glassdoor.com
 A prototype for scraping glassdoor ratings for a given portfolio holdings file (powered by google's custom search API and Selenium)
 
 ### Process Overview

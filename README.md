@@ -2,9 +2,9 @@
 A prototype for scraping glassdoor ratings for a given portfolio holdings file (powered by google's custom search API and Selenium)
 
 ### Process Overview
- 1. take a list of names from a holdings file 
- 2. determine the glassdoor homepage (via google's search api) for each company (using the "cleaned up" company name as the query)
- 3. scrape glassdoor's main page for company information and top-level ratings and an additional modal/pop-up for granular ratings (mimicking user clicks via Selenium) 
+ 1. Take a list of names from a holdings file 
+ 2. Determine the glassdoor homepage (via google's search api) for each company (using the "cleaned up" company name as the query)
+ 3. Scrape glassdoor's main page for company information and top-level ratings and an additional modal/pop-up for granular ratings (mimicking user clicks via Selenium) 
  4. Organize and merge the output back as columns into the original holdings file.
 
 *This is a prototype for further development. While you might find snippets contained here helpful, 
@@ -40,7 +40,7 @@ Input:
 * `./extracts/overview_extra/<glassdor_link.html>` (additional info)
 Outputs: 
 * `./extracted_glassdoor.csv`
-* 
+
 Note: Uses `multiprocessing` to loop through all the raw html files
 
 #### 6. Build Final Output `build_final_output.py`

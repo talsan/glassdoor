@@ -1,11 +1,10 @@
 import requests
 import pandas as pd
+import config
 
-company_query = 'ibm'
-
-url = 'https://www.googleapis.com/customsearch/v1/siterestrict?'
-cx = 'fc57dcaee3e766655'
-key = 'AIzaSyDL17XgQVZ2n7TfZG_S7CrZax14x1w-ilM'
+url = config.url
+cx = config.cx
+key = config.key
 
 names = pd.read_csv('./company_queries_2020_12_18.csv')
 existing_output = pd.read_csv('./top_google_results_2020_12_18.csv')

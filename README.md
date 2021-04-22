@@ -28,17 +28,19 @@ Output: `./google_results/top_google_results_2020_12_18.csv`
 #### 4. Download HTMLs for Top Results `get_ceo_rating.py`
 Input: `./google_results/top_google_results_2020_12_18.csv`
 Outputs: 
-* `./extracts/overview/<glassdor_link>` (main page)
-* `./extracts/overview_extra/<glassdor_link>` (additional info)
-
-#### 5. Download HTMLs for Top Results `get_ceo_rating.py`
-Input: `./google_results/top_google_results_2020_12_18.csv`
-Outputs: 
 * `./extracts/overview/<glassdor_link.html>` (main page)
 * `./extracts/overview_extra/<glassdor_link.html>` (additional info)
 * `./extracts/errors/<glassdor_link.html>` (pages that encountered errors)
 
 Note: Sleeps randomly (min 10 seconds, max 30 seconds)
+
+#### 5. Extract Structured Data from HTML `extract_from_html.py`
+Input: 
+* `./extracts/overview/<glassdor_link.html>` (main page)
+* `./extracts/overview_extra/<glassdor_link.html>` (additional info)
+Outputs: 
+* `./extracted_glassdoor.csv`
+Note: Uses `multiprocessing` to loop through all the raw html files
 
 #### 6. Build Final Output `build_final_output.py`
 Formatting for output specifications; 
